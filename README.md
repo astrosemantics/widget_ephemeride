@@ -1,4 +1,4 @@
-![Widget éphéméride](assets/img/widget-ephemeride-jour.png) ![Widget éphéméride](assets/img/widget-ephemeride-nuit.png)
+![Widget éphéméride](assets/img/widget-ephemeride-jour.webp) ![Widget éphéméride](assets/img/widget-ephemeride-nuit.webp)
 
 
 # Widget « Éphéméride astro »
