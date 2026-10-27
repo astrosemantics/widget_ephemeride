@@ -1,3 +1,6 @@
+![Widget éphéméride](assets/img/widget-ephemeride-jour.png) ![Widget éphéméride](assets/img/widget-ephemeride-nuit.png)
+
+
 # Widget « Éphéméride astro »
 
 > **Version 2.0** (octobre 2026) — tout-en-un, format 4×6
