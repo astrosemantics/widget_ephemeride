@@ -11,7 +11,7 @@ Il **passe en rouge** dès que le Soleil descend à −6° sous l'horizon, pour 
 | **Éphéméride** | Lever et coucher du Soleil (durée du jour, écart avec la veille), de la Lune (phase, illumination, **+1** si elle se couche le lendemain), nuit tombée (−6°) et nuit noire (−18°) |
 | **Le ciel ce soir** | Note sur 100 (nuages, Lune, stabilité de l'air) dans un anneau vert, orange ou rouge, et une phrase : « Ciel dégagé de 22 h à 7 h, air stable, sans Lune gênante. » |
 | **Aujourd'hui dans le ciel** | Étoiles filantes, équinoxes et solstices, phases de la Lune, rapprochements Lune-planète, planètes visibles |
-| **Mot du jour** | Un mot du glossaire (290 mots), sa définition et un bouton **Wikipédia ↗** |
+| **Mot du jour** | Un mot du glossaire (290 mots) et sa définition, avec un bouton **Wikipédia ↗** facultatif |
 | **Ce jour-là** | Un fait d'histoire de l'astronomie survenu à la même date (633 faits) |
 
 Le mot du jour suit la même rotation que le widget « Mot astro du jour ». Les jours d'événement,
@@ -37,14 +37,17 @@ il ne répète pas la pleine Lune ou la pluie d'étoiles filantes, déjà annonc
 https://votre-site/ephemeride/ephemeride-widget.php?lat=$li(lat)$&lon=$li(lon)$&loc=$li(loc)$&v=$df(yyMMddHH)$$mu(floor, df(mm)/15)$
 ```
 
-4. Ajuster l'**échelle** de la racine (onglet Calque) pour que l'image remplisse le widget.
+4. Ajuster l'**échelle** de la racine (onglet Calque) pour que l'image remplisse le widget
+   (en 4×6, elle doit presque toucher les bords gauche et droit).
 
 > Vérifier dans l'aperçu que la fin de l'adresse donne bien une date, par exemple `&v=261026183`.
 > Si l'on voit `df(yyMMddHH)` en toutes lettres, il manque un `$` : le widget ne se mettrait jamais à jour.
 
-### 3. Le bouton « Wikipédia ↗ »
+### 3. Le bouton « Wikipédia ↗ » (facultatif, masqué par défaut)
 
-Une forme invisible posée sur le bouton dessiné ouvre la page Wikipédia du mot du jour.
+Le bouton n'est pas dessiné par défaut. Pour l'afficher, retirer les `//` devant les deux lignes
+`$d->pilule(…)` et `$d->texte('Wikipédia ↗', …)` dans `ephemeride-widget.php`, section « 4. Mot du jour ».
+Une forme invisible posée dessus ouvre alors la page Wikipédia du mot du jour.
 
 1. Dans l'éditeur du widget, rester sur la **racine** et toucher **+**, puis **Forme**.
 2. Onglet **Forme** : type **Rectangle**, largeur **112**, hauteur **38**.
@@ -71,7 +74,7 @@ va dans le dossier **Kustom/widgets** du téléphone, et se recharge depuis l'on
 ## Passer de la version 1.1 (4×4) à la 2.0
 
 L'adresse ne change pas : agrandir le widget en **4×6**, réajuster l'échelle de la racine,
-et ajouter le bouton Wikipédia. L'ancienne version compacte reste disponible à l'adresse
+et, si on le souhaite, afficher le bouton Wikipédia. L'ancienne version compacte reste disponible à l'adresse
 `ephemeride-4x4.php` (mêmes paramètres), pour un widget 4×4.
 
 ---
