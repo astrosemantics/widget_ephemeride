@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: Widget Éphéméride astro
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Daniel
+    family-names: Dubois
+    email: daniel@web-eau.net
+repository-code: 'https://github.com/astrosemantics/widget_ephemeride'
+abstract: >-
+  An all-in-one Android widget (KWGT, 4×6 format) for the
+  sky of the day, based on the phone's position: sunrise and
+  sunset, moonrise, moonset and phase, dusk and astronomical
+  night, tonight's sky rating out of 100 (clouds, Moon,
+  seeing), the day's sky events (meteor showers, equinoxes,
+  Moon phases, visible planets), an astronomy word of the day
+  with a Wikipedia link, and an "on this day" fact from the
+  history of astronomy (633 facts). Turns red at night to
+  preserve dark adaptation. Texts in French.
+keywords:
+  - Android
+  - Widget
+  - Astronomy
+  - Ephemeris
+license: CC-BY-4.0
+version: 2.0.0
+date-released: '2026-10-26'
